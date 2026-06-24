@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SonaLearn-Motion | Home</title>
+    <style>
+        @import url('https://googleapis.com');
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; font-family: 'Inter', sans-serif; background-color: #000; color: #fff; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+        
+        /* Moving Background Style */
+        .bg-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.35; filter: blur(4px); z-index: 1; }
+        .content { position: relative; z-index: 2; text-align: center; max-width: 600px; padding: 20px; }
+        .title { font-size: 54px; font-weight: 800; background: linear-gradient(135deg, #fff 40%, #818cf8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0 0 10px 0; }
+        .tag { color: #9ca3af; font-size: 16px; margin-bottom: 35px; }
+        
+        /* Format Selection Boxes */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        .box { background: #0a0a0c; border: 1px solid #1f1f23; padding: 20px; border-radius: 16px; text-align: left; cursor: pointer; transition: 0.2s; text-decoration: none; color: inherit;}
+        .box:hover { border-color: #6366f1; background: #14141c; transform: translateY(-2px); }
+        .box h3 { margin: 0 0 8px 0; color: #fff; font-size: 18px; display: flex; justify-content: space-between; }
+        .box p { color: #9ca3af; font-size: 13px; margin: 0; line-height: 1.4; }
+        .badge { font-size: 11px; background: rgba(99,102,241,0.15); color: #818cf8; padding: 3px 8px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Translucent moving background video -->
+    <video class="bg-video" src="https://mixkit.co" autoplay loop muted playsinline></video>
+
+    <div class="content">
+        <h1 class="title">SonaLearn-Motion</h1>
+        <p class="tag">The Premier Public AI Classroom Video Laboratory by Sangam & Sona</p>
+        
+        <!-- Two Choice Boxes -->
+        <div class="grid">
+            <a href="long-mode.html" class="box">
+                <h3><span>🎬 Explainer Mode</span> <span class="badge">1:00 Min</span></h3>
+                <p>Create a full educational video using 4 connected scene panels chained back-to-back.</p>
+            </a>
+            <a href="short-mode.html" class="box">
+                <h3><span>📱 Micro Shorts Mode</span> <span class="badge">30s Max</span></h3>
+                <p>Quickly generate high-speed short video clips tailored for mobile layouts.</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
+
